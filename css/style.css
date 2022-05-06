@@ -103,3 +103,21 @@ footer{
     width: 24px;
     float: right;
 }
+.mapa_mundi{
+    float: right;
+    margin: 10%
+}
+.mapamundi{
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+tr,td,th{
+    align-items: center;
+    border: 2px solid aquamarine;
+}
+table{
+    align-items: center;
+    border-collapse: collapse;
+    border: 5px solid aquamarine;
+}
