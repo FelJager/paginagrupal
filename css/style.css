@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:rgb(226, 255, 255);
+    background-color:rgb(11, 92, 92);
 }
 nav {
     background-color: cadetblue;
@@ -43,6 +43,11 @@ header{
     font-size:; 
     text-shadow:-2px 0 #000, 0 2px rgb(51, 65,194), 2px 0 rgb(51, 65, 194), 0 -2px #000; /*aprenderte esto mirey*/
 }
+
+.informacion {
+    color: azure;
+}
+
 article{
     display: block;
     background-color: rgb(203, 229, 252);
