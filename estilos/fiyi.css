@@ -1,15 +1,36 @@
-* {
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*cambia el modelo de la pagina*/
+}
+html{
+    background-image: url(/imagenes/banderafriyi.png) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 999px;
+    background-attachment: fixed;/*hace q la imagen quede estatica*/
+    background-size: cover;
 }
 
 body {
-    background-color:rgb(113, 151, 151);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;/*adapatarse y sobrevivir*/
+    min-height: 100%;/*q ocupe toda la pantalla*/
 }
-nav {
-    background-color: rgb(10, 63, 65);
+body{
+    gap: 10px;
+    grid: 
+    "nav"
+    "footer"
+    "section"
+    ;
 }
 
-.menu {
+.nav {
+    background-color: #1c2f3d
+}
+
+.nav {
     text-align: center;
     margin: 0;
 }
@@ -18,37 +39,62 @@ img{
     height: auto;
     position: relative;
 }
-.menu li {
+.nav li {
     display: inline-block;
 }
 
-.menu a {
+.nav a {
     padding: 30px;
     color: white;
     text-decoration: none;
     display: block;
 }
 
-.menu a:hover {
-    background-color: darkslategray;
+.nav a:hover {
+    background-color:#427192;
+}
+.section{
+    grid-area: section;
+    background-color: rgba(138, 123, 123, 0);
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.img1{
+    width: 500px;
+    height: auto;
 }
 
-
-footer{
-    margin: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.footer{
+    grid-area: footer;
+    background-color: rgb(192, 224, 11);
 }
 .facebook{
     width: 24px;
     float: right;
 }
 .instagram{
-    padding-right: 20px;
+    
     width:24px;
     float: right;
 }
 .twitter{
-    margin-inline: 20px;
+    
     width: 24px;
     float: right;
+}
+
+@media(min-width:900px){
+    body{
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows:100px auto 100px ;
+        grid-template-areas:
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+    }
 }
