@@ -39,8 +39,8 @@ header{
     color: rgb(0, 0, 0);
     text-align: center; 
     font-family: Arial Black; 
-    font-weight: ; /*bold es negrita*/
-    font-size:; 
+    /*font-weight: ; /*bold es negrita*/
+    /*font-size:;*/ 
     text-shadow:-2px 0 #000, 0 2px rgb(51, 65,194), 2px 0 rgb(51, 65, 194), 0 -2px #000; /*aprenderte esto mirey*/
 }
 
