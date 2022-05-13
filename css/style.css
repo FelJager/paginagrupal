@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,11 +15,13 @@ nav {
     text-align: center;
     margin: 0;
 }
+
+/*
 img{
     width: 60px;
     height: auto;
     position: relative;
-}
+}*/
 .menu li {
     display: inline-block;
 }
@@ -91,7 +95,9 @@ strong{
     float: left;
 }
 footer{
-    margin: 50px;
+    background-color: grey;
+    padding: 50px;
+    color: azure;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .facebook{
@@ -125,4 +131,8 @@ table{
     align-items: center;
     border-collapse: collapse;
     border: 5px solid aquamarine;
+}
+
+footer p {
+    padding: 5px;
 }
