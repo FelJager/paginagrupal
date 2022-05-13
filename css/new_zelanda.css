@@ -69,3 +69,13 @@ h3 h4 {
     left: 0;
     transition: all .3s;
 }
+
+footer {
+    background-color: grey;
+    padding: 50px;
+    color: azure;
+}
+
+footer p {
+    padding: 20px;
+}
