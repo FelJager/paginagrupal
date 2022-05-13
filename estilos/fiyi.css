@@ -4,7 +4,7 @@
     box-sizing: border-box;/*cambia el modelo de la pagina*/
 }
 html{
-    background-image: url(/imagenes/banderafriyi.png) ;
+    background-color:rgb(113, 151, 151);
     background-repeat: no-repeat;
     background-position: center center;
     height: 999px;
@@ -12,82 +12,113 @@ html{
     background-size: cover;
 }
 
-body {
+body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;/*adapatarse y sobrevivir*/
     min-height: 100%;/*q ocupe toda la pantalla*/
 }
+body > *{
+    box-shadow:-1px 1px 7px 0px rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
 body{
+    /*hace q se vuelva una sola columna*/
+    display: grid;
+    /*separacion de los elementos*/
     gap: 10px;
-    grid: 
+    grid-template-areas:
+    "header"
     "nav"
-    "footer"
     "section"
+    "aside"
+    "footer"
     ;
 }
-
-.nav {
-    background-color: #1c2f3d
+.header{
+    grid-area: header;
 }
 
-.nav {
+ul{
+    color: black;
+}
+ul{
+    background-color: rgb(10, 63, 65);
+}
+
+ul{
     text-align: center;
     margin: 0;
 }
-img{
-    width: 60px;
-    height: auto;
-    position: relative;
-}
-.nav li {
+ul li {
     display: inline-block;
 }
 
-.nav a {
+ul a {
     padding: 30px;
     color: white;
     text-decoration: none;
     display: block;
 }
 
-.nav a:hover {
-    background-color:#427192;
+ul a:hover {
+    background-color:darkslategray;
+}
+.nav{
+    grid-area: nav;
+    background-color: rgba(0, 0, 255, 0);
 }
 .section{
     grid-area: section;
-    background-color: rgba(138, 123, 123, 0);
+    background-color: rgba(137, 43, 226, 0);
 }
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.aside{
+    grid-area: aside;
 }
-.img1{
-    width: 500px;
-    height: auto;
+.uno{
+    float: right;
 }
-
+.section , .c{
+    pointer-events:none;
+    background-color: rgba(127, 255, 212, 0);
+}
+img{
+    padding: 10px;
+    margin: 5px ;
+    border: 1px solid rgb(93, 136, 139);
+}
 .footer{
     grid-area: footer;
-    background-color: rgb(192, 224, 11);
+    background-color: rgb(127, 213, 235);
+    text-align: left;
 }
 .facebook{
-    width: 24px;
+    pointer-events: none;
+    width: 50px;
     float: right;
 }
 .instagram{
-    
-    width:24px;
+    pointer-events: none;
+    width:50px;
     float: right;
 }
 .twitter{
-    
-    width: 24px;
+    pointer-events: none;
+    width: 50px;
     float: right;
 }
+/*PSEUDOELEMENTO*/
+img:hover{
+    width: 150%;
+    height: auto;
+    /*blur();desenfoca grayscale escala de grices=sepia intensidad de coplores= saturate */
+    filter: saturate(180%);
+    transform: scale(1.15)
+}
+/*pseusocodigo: se añade a los selectores y especifica el estado especail del comando seleccionado*/
 
+/*tamaño de escritorio*/
 @media(min-width:900px){
     body{
         grid-template-columns: 200px auto 200px;
