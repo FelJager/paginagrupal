@@ -31,9 +31,12 @@ nav {
     background-color: darkslategray;
 }
 
-h3 h4 {
-    color: black;
-    text-align: center;
+.cont-main {
+    width: 100%;
+}
+
+.cont-main .info {
+    display: inline-block;
 }
 
 .img-gal {
