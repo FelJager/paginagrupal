@@ -5,7 +5,7 @@
 }
 
 nav {
-    background-color: rgb(10, 63, 65);
+    background-color: rgb(10, 63, 65);  
 }
 
 .menu{
@@ -50,9 +50,14 @@ nav {
     display: block;
     visibility: visible;
 }
-
-.entrada{
-    background-color: #75750b;
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    object-fit: cover;
+}
+.contenido{
+    background-color: #c9ab00;
     background-size: cover;
     text-align: left;
     overflow: hidden;
@@ -63,69 +68,17 @@ nav {
     display: flex;
     align-items: center;
 }
-
-.contenido{
-    background-image: url("../imagenes/australia/maderita.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    padding: 30px;
-    text-shadow: 0px 0px 9px #0e1011;
-    
+.articulos{
+    width: 80%;
+    border-right: 3px solid black;
 
 }
-.centro{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: auto;
-    border-radius: 10%;
-    border: 5px solid rgb(255, 255, 255);
-    
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
 }
 
-img{
-    transform: all 1.5s linear;
-}
-img:hover{
-    transform: scale(1.15);
-}
-
-
-.saul{
-    color: black;
-}
-
-.mundi{
-    width: 200px;
-    height: auto;
-    position: relative;
-    border:  none;
-}
-
-
-
-h1{
-    text-align: center;
-}
-
-h2{
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;    
-    color: #ffffff;
-    text-shadow: 0px 0px 9px #828588;
-}
-
-h3{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: #ffffff;
-    text-shadow: 0px 0px 20px #508AD3;
-}
 
 footer{
     
@@ -156,5 +109,4 @@ footer p{
     width: 30px;
     height: auto;
     position: relative;
-
 }
