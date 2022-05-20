@@ -20,6 +20,10 @@ nav {
     display: inline-block;
 }
 
+.submenu {
+    list-style:none;
+}
+
 .menu a {
     padding: 30px;
     color: white;
@@ -27,8 +31,23 @@ nav {
     display: block;
 }
 
-.menu a:hover {
+.menu li a:hover {
     background-color: darkslategray;
+}
+
+.menu li .submenu {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.menu li .submenu {
+    position: relative;
+}
+
+.nav li .submenu {
+    right:-140px;
+    top:0px;
 }
 
 .cont-main {
