@@ -10,6 +10,8 @@ body {
 
 nav {
     background-color: rgb(10, 63, 65);
+    position: sticky;
+    top: 0;
 }
 
 #menu {
@@ -152,7 +154,7 @@ h1 {
     position: absolute;
 }
 
-.img-gal {
+#img-gal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
@@ -195,7 +197,7 @@ section {
     border-top: 30px;
 }
 
-.informacion-pais img {
+#informacion-pais img {
     padding: 10px;
     position: relative;
     float: right;
@@ -223,17 +225,17 @@ hr {
     background-color:cadetblue;
 }
 
-.informacion-pais h2{
+#informacion-pais h2{
     padding-bottom: 5px;
     color:blue;
 }
 
-.informacion-pais p {
+#informacion-pais p {
     padding-right: 20px;
     font-size: large;
 }
 
-.informacion-pais div {
+#informacion-pais div {
     width: 100%;
     float: inline-start;
     padding-left: 10%;
